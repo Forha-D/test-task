@@ -89,6 +89,9 @@ const Login = ({ onLogin }) => {
          onSuccess={(credentialResponse)=>{
         console.log(credentialResponse)
         responseGoogle(credentialResponse); 
+        onLogin();
+        navigate('/');
+
         }}
         onError={()=> {
 
